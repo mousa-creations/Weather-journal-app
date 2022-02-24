@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  font-size: 15px;
+  background: #ebebeb;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  color: #fff;
+  background-color: #1b1b1b;
+}
+
+#app {
+  display: grid;
+  grid-auto-rows: minmax(100px, auto);
+  /* grid-template-columns:  */
+  height: 100%;
+  justify-content: center;
+  grid-gap: 1em;
+  font-size: 1.25rem;
+  color: #d7f7f0;
+}
+
+.entry {
+  padding: 10px;
+  font-weight: 500;
+  color: #000;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 0.8px #1b1b1b;
+}
+
+.headline {
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+/*  Basic Styling To Override Default For Basic HTML Elements */
+label {
+  display: block;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 10px;
+  margin-top: 40px;
+}
+
+input {
+  display: block;
+  height: 60px;
+  width: 320px;
+  font-family: "Rubik", sans-serif;
+  font-size: 1.3rem;
+  text-align: center;
+  color: #d7f7f0;
+  background: #fff;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 0px 0.8px #1b1b1b;
+}
+
+button {
+  margin-left: 10px;
+  width: 260px;
+  height: 80px;
+  font-family: "Rubik", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #ffffff;
+  background: rgb(27 27 27);
+  border: none;
+  border-radius: 5px;
+  transform: translate(2px, -43%);
+  cursor: pointer;
+}
+
+textarea {
+  padding-top: 80px;
+  height: 200px;
+  width: 500px;
+  background: #fff;
+  font-family: "Rubik", sans-serif;
+  font-size: 1.3rem;
+  text-align: center;
+  color: #d7f7f0;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 0px 0.8px #1b1b1b;
+}
+/* Reset style for HTML element on active to have no border*/
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+/* Style for Placeholder Text*/
+::placeholder {
+  /* Firefox, Chrome, Opera */
+  color: #c2c0c0;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #c2c0c0;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #c2c0c0;
+}
